@@ -19,6 +19,6 @@ To use the scripts, follow these steps:
 
 # Requirements
 The scripts require the following Python packages:
-pandas
+\n pandas
 requests
 json
