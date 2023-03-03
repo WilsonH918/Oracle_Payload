@@ -1,6 +1,5 @@
-# Oracle_Payload
-Project Title
-Oracle Cloud Procurement Agent Uploader
+# Oracle Cloud Procurement Agent Uploader
+
 
 Overview
 This project provides a set of Python scripts that automate the process of uploading procurement agents to Oracle Cloud using the Oracle Cloud REST API. The scripts can process multiple agents at once, saving users a significant amount of time compared to manually inputting agents through the Oracle Cloud UI.
