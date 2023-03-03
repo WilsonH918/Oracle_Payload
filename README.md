@@ -1,7 +1,7 @@
 # Oracle Cloud Procurement Agent Uploader
 
 
-Overview
+# Overview
 This project provides a set of Python scripts that automate the process of uploading procurement agents to Oracle Cloud using the Oracle Cloud REST API. The scripts can process multiple agents at once, saving users a significant amount of time compared to manually inputting agents through the Oracle Cloud UI.
 
 There are two scripts included in this project:
@@ -9,7 +9,7 @@ There are two scripts included in this project:
 2. deploy_input_name.py: This script allows users to type in the agent name and procurement BU in the VScode and follows the same process as the deploy_input_file.py script.
 
 
-Usage
+# Usage
 To use the scripts, follow these steps:
 1. Clone this repository to your local machine using Git.
 2. Install the required Python packages by running pip install -r requirements.txt.
@@ -17,7 +17,7 @@ To use the scripts, follow these steps:
 4. Run the deploy_input_file.py script or the deploy_input_name.py script, depending on your needs. The scripts will prompt you for any required inputs and guide you through the process of uploading the procurement agents.
 
 
-Requirements
+# Requirements
 The scripts require the following Python packages:
 pandas
 requests
