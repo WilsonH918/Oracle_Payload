@@ -14,7 +14,7 @@ To use the scripts, follow these steps:
 1. Clone this repository to your local machine using Git.
 2. Install the required Python packages by running pip install -r requirements.txt.
 3. Set up your Oracle Cloud credentials in a config.ini file. You can use the config_template.ini file as a starting point.
-4. Run the deploy_input_file.py script or the deploy_input_name.py script, depending on your needs. The scripts will prompt you for any required inputs and guide you through the process of uploading the procurement agents.
+4. Run the deploy_auto.py script or the deploy_manual.py script, depending on your needs. The scripts will prompt you for any required inputs and guide you through the process of uploading the procurement agents.
 
 
 # Requirements
