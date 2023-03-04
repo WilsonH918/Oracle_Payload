@@ -101,7 +101,7 @@ if check == "Y":
     print(response.status_code)
 
 else:
-    print("Please double-check with you input document.")
+    print("Please double-check with your input document.")
     exit()
 
 
