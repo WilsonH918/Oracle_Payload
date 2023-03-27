@@ -4,10 +4,10 @@ This project provides Python scripts that automate the process of uploading proc
 ## Overview  
 The project includes 3 Python scripts and 1 SQL script: 
 
-1. AgenttoAgentId.sql: Run this SQL script on your Oracle Cloud instance to return a report. Name the report "AgenttoAgentId_Report" to fit the code.  
-2. deploy_auto.py: This script reads in a file called "input.xlsx" that contains a list of usernames and business units. It creates a payload for each user and uploads the final combined payload to Oracle Cloud.  
-3. deploy_ui.py: This script provides a user-friendly interface for running the same process as deploy_auto.py. It allows you to select and load the necessary files from different locations.  
-4. deploy_manual.py: This script allows users to type in the agent name and procurement BU in the VScode and follows the same process as deploy_auto.py.  
+- AgenttoAgentId.sql: Run this SQL script on your Oracle Cloud instance to return a report. Name the report "AgenttoAgentId_Report" to fit the code.  
+- deploy_auto.py: This script reads in a file called "input.xlsx" that contains a list of usernames and business units. It creates a payload for each user and uploads the final combined payload to Oracle Cloud.  
+- deploy_ui.py: This script provides a user-friendly interface for running the same process as deploy_auto.py. It allows you to select and load the necessary files from different locations.  
+- deploy_manual.py: This script allows users to type in the agent name and procurement BU in the VScode and follows the same process as deploy_auto.py.  
 
 ## Usage  
 To use the scripts, follow these steps:
