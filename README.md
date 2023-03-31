@@ -17,7 +17,7 @@ To use the scripts, follow these steps:
 4. Run the deploy_auto.py, deploy_ui.py or the deploy_manual.py script, depending on your needs. The scripts will prompt you for any required inputs and guide you through the process of uploading the procurement agents.  
 Note: Please make sure that .env, AgenttoAgentId_Report.xlsx, input.xlsx, deploy_auto.py, deploy_manual.py and deploy_ui.py are all essential and should be placed in the same folder.  
 
-## Discuss    
+## Discussion    
 This Python script updates user accounts in Oracle Procurement using data from two input files. The agent_df DataFrame contains the current user account information, while the input_df DataFrame contains the updated information.  
 
 The script first retrieves the Oracle username and password from environment variables using the load_dotenv() function from the dotenv package. It then prompts the user to select the input files using a file dialog.  
