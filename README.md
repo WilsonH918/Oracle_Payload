@@ -17,6 +17,41 @@ To use the scripts, follow these steps:
 4. Run the deploy_auto.py, deploy_ui.py or the deploy_manual.py script, depending on your needs. The scripts will prompt you for any required inputs and guide you through the process of uploading the procurement agents.  
 Note: Please make sure that .env, AgenttoAgentId_Report.xlsx, input.xlsx, deploy_auto.py, deploy_manual.py and deploy_ui.py are all essential and should be placed in the same folder.  
 
+## Discuss    
+This Python script updates user accounts in Oracle Procurement using data from two input files. The agent_df DataFrame contains the current user account information, while the input_df DataFrame contains the updated information.  
+
+The script first retrieves the Oracle username and password from environment variables using the load_dotenv() function from the dotenv package. It then prompts the user to select the input files using a file dialog.  
+
+The deploy_update() function is the main function that handles the update process. If there is only one user to update, the function updates the user using the single upload endpoint. If there are multiple users to update, the function updates them using the bulk upload endpoint.  
+
+The function constructs the payload for each user using the agent_id and bu values from the input DataFrame. It then sends a PATCH request to the Oracle Procurement API with the payload using the requests package. The function also shows a message box with the result of the update.  
+
+The select_file() function opens a file dialog to prompt the user to select a file and returns the path of the selected file.  
+
+To use this script, the user should set the required environment variables and provide the input files in the CSV and Excel formats. The user should then run the script and follow the prompts.  
+
+The payload for each user contains the following settings:  
+
+- Status: "Active"
+- DefaultRequisitioningBU: None
+- DefaultRequisitioningBUId: None
+- DefaultPrinter: None
+- ManageRequisitionsAllowedFlag: True
+- AccessLevelToOtherAgentsRequisitions: "Full"
+- ManageOrdersAllowedFlag: True
+- AccessLevelToOtherAgentsOrders: "Full"
+- ManageAgreementsAllowedFlag: True
+- AccessLevelToOtherAgentsAgreements: "Full"
+- ManageNegotiationsAllowedFlag: False
+- AccessLevelToOtherAgentsNegotiations: "None"
+- ManageSourcingProgramsAllowedFlag: False
+- AccessLevelToOtherAgentsSourcingPrograms: "None"
+- ManageCatalogContentAllowedFlag: True
+- ManageSuppliersAllowedFlag: True
+- ManageQualificationsAllowedFlag: True
+- AccessLevelToOtherAgentsQualifications: "Full"
+- ManageAslAllowedFlag: True
+- AnalyzeSpendAllowedFlag: True
 
 ## Requirements  
 The scripts require the following Python packages:  
